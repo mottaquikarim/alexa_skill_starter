@@ -1,0 +1,16 @@
+{
+  "name": "generic_alexaskill",
+  "version": "1.0.0",
+  "description": "A simple recipe for getting started quickly with Amazon ASK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "./node_modules/.bin/watchman *.js \"find . -not -name \"*.zip\" -not -name \"*.sh\" -not -name \"*.git*\" | xargs zip dist.zip\"",
+    "build": "find . -not -name \"*.zip\" -not -name \"*.sh\" -not -name \"*.git*\" | xargs zip dist.zip"
+  },
+  "author": "Mottaqui Karim",
+  "license": "ISC",
+  "devDependencies": {
+    "watchman": "^0.1.8"
+  }
+}
